@@ -1,0 +1,103 @@
+.HeaderBox{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.HeaderTitle{
+  font-size: 3rem;
+  color: rgba(255,255,255,0.87);
+  animation: title-vibing 6s infinite ease;
+}
+
+@keyframes title-vibing {
+  /* 0%{color: rgba(255,255,255,0.87); transform: scale(100.5%);}
+  50%{color: rgba(255,255,255,0.5); transform: scale(100%);}
+  100%{color: rgba(255,255,255,0.87); transform: scale(100.5%);} */
+
+  0%{color: rgba(255,255,255,0.87); transform: rotate(1deg);}
+  50%{color: rgba(255,255,255,0.5); transform: rotate(-1deg);}
+  100%{color: rgba(255,255,255,0.87); transform: rotate(1deg);}
+}
+
+
+.optionsContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.searchInput{
+  width: 60vw;
+  height: 40px;
+  border-radius: 1rem;
+  padding-left: 1rem;
+}
+.searchInput::placeholder{
+  color: grey;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.buttonsContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+}
+
+.pageButtons{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+}
+
+.pageButtons-button{
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 0.5rem;
+  cursor: pointer;
+  border: 0;
+  margin: 0 1rem;
+}
+
+.disabledButton{
+  color: rgba(255, 255, 255, 0.3);
+  cursor:not-allowed;
+}
+
+
+.itemsPerPage{
+  display: flex;
+  flex-direction: row;
+  /* width: 75%;
+  justify-content: space-around; */
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.itemsPerPage-select{
+  font-weight: 600;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 0.5rem;
+  cursor: pointer;
+  border: 0;
+  margin: 0 1rem;
+}
+
+.itemsPerPage-select option{
+  background: rgba(0,0,0,0.8);
+  color: white;
+}

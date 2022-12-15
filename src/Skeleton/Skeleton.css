@@ -1,0 +1,51 @@
+.ItemContainer--skeleton{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem 1rem;
+  background-color: rgba(255, 255, 255, 0.14);
+  border-radius: 1rem;
+  width: 90%;
+  height: 150px;
+  max-width: 1000px;
+  max-height: 400px;
+  overflow: hidden;
+}
+
+.Item-skeleton--image{
+  width: 55%;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.14);
+  animation: background-loader 1s infinite ease-in-out;
+}
+
+.ItemsSkeletonContainer{
+  display: flex;
+  width: 40%;
+  margin-top: 4px;
+  flex-direction: column;
+}
+.Item-skeleton--title{
+  width: 100%;
+  height: 30px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.20);
+  animation: background-loader 1s infinite ease-in-out;
+}
+
+.Item-skeleton{
+  width: 100%;
+  margin-top: 20px;
+  height: 15px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.20);
+  animation: background-loader 1s infinite ease-in-out;
+}
+
+@keyframes background-loader {
+  0%{background-color: rgba(255, 255, 255, 0.20)}
+  50%{background-color: rgba(255, 255, 255, 0.40)}
+  100%{background-color: rgba(255, 255, 255, 0.20)}
+}

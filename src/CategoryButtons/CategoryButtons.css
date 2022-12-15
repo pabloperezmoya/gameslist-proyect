@@ -1,0 +1,21 @@
+.categoriesContainer{
+  display: flex;
+  width: 40%;
+  max-width: 50%;
+  margin: 1.5rem;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.categoryButton{
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-left: 0.5vw;
+  margin-right: 0.5vw;
+  padding: 0.5rem;
+  cursor: pointer;
+  border: 0;
+  border-bottom: 3px solid rgba(255, 255, 255, 0.3);
+  border-right: 3px solid rgba(255, 255, 255, 0.3);
+}
